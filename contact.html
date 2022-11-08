@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar sidebargo">
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about.html"> About Me</a></li>
+                    <li><a href="/skills.html"> Works/Projects</a></li>
+                    <li><a href="/contact.html" class="active"> Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="ham">
+                <img class="ham1" src="ham.png" alt="" width="23px">
+                <img class="cross" src="cross.png" alt="" width="23px">
+            </div>
+            <div class="contactform">
+                <h1>Contact Me </h1>
+                <form>
+                    <div class="formdetails">
+                        <div class="input-group-text" id="basic-addon1">Your Name Please..</div>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                    </div>
+                    <div class="formdetails">
+                        <label for="InputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="InputEmail1" placeholder="example@gmail.com" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email and contact details with
+                            anyone else.</div>
+                    </div>
+                    <div class="formdetails">
+                        <label for="phone" class="form-label">Contact Details</label>
+                        <input type="phone" class="form-control" id="phone" placeholder="0000000000" aria-describedby="phoneHelp">
+                    </div>
+                    <div class="formdetails check">
+                        <input class="form-check-input" type="checkbox" value="" id="isClient" checked>
+                        <label class="form-check-label" for="isClient">
+                            Want to work with me for any projects?
+                        </label>
+                    </div>
+                    <div class="formdetails">
+                        <div class="input-group-text">Your Concern/Query </div>
+                        <textarea class="form-control" placeholder="Write to us..." aria-label="With textarea"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <div class="social">
+                    <a href="mailto:priyanshidhanuka9@gmail.com">
+                        <img src="gmail.png" alt="">
+                    </a>
+                    <a href="http://www.linkedin.com/in/priyanshi-dhanuka-551497227/">
+                        <img src="linkedin.png" alt="">
+                    </a>
+                    <a href="http://www.instagram.com/priyanshidhanuka1?r=nametag">
+                        <img src="insta.png" alt="">
+                    </a>
+                    <a href="http://github.com/priyanshi-158">
+                        <img src="github.webp" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

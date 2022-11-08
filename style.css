@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+}
+.sidebar{
+    background-color: gray;
+    font-family: 'PT Serif', serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+    position: fixed;
+}
+.sidebar nav{
+    padding: 28px;
+}
+.sidebar nav li{
+    list-style-type: none;
+    font-size: 1.5rem;
+    padding: 64px 0;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.active{
+    color: peachpuff !important;
+}
+.main{
+    width: 90vw;
+}
+.infocontainer
+{
+    width: 100vw;
+    height: 66vh;
+    margin: 146px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.image img{
+    width:455px;
+    height: 56vh;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.greet{
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+.name{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.about{
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 20px;
+}
+.buttons{
+    margin-top: 35px;
+}
+.btn{
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: dodgerblue;
+    color: white;
+    margin: 0 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: white;
+    color: dodgerblue;
+    font-weight: bolder;
+}
+.contactform{
+    margin: 0 60px;
+    font-family: 'PT Serif', serif;
+    padding: 0 36px;
+    padding-top: 90px;
+}
+.contactform h1{
+    font-family: 'Ubuntu', sans-serif;
+}
+.formdetails{
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+}
+#emailHelp{
+    font-size: 10px;
+    color: rgb(2, 2, 61);
+    margin: 0 5px;
+}
+.formdetails input{
+    margin: 5px 0 0 0;
+    padding: 8px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+.formdetails textarea{
+    height: 102px;
+    width: 28vw;
+    margin: 5px 0 0 0;
+    padding: 8px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+.check{
+    flex-direction: row;
+}
+.check input{
+    width: 25px;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+}
+.social a img{
+    width: 40px;
+    padding: 33px 10px;
+}
+.skillitem img{
+    width:80vw;
+    margin:20px;
+}
+.skillcontainer{
+    margin: 30px 60px;
+}
+.skillcontainer h1{
+    margin:0 35px;
+    font-family: 'Ubuntu',sans-serif;
+}
+.skillitem{
+    padding:23px;
+    margin:0 12px;
+}
+.skillitem h2{
+    font-family: 'Roboto',sans-serif
+}
+.skillitem p{
+    font-family: 'PT Serif', serif;
+    font-size: 18px;
+    padding: 5px 0;
+}
+.ham{
+    position: fixed;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+.ham1{
+    margin-left: 8px;
+    margin-top: 8px;
+}
+.cross{
+    margin-left: 160px;
+    margin-top: 8px;
+}
+.sidebargo{
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+.aboutcontainer{
+    margin: 0 60px;
+    padding: 0 36px;
+    padding-top: 90px;
+}
+.introsection{
+    margin-bottom:40px ;
+}
+.one{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.one img{
+    width: 250px;
+    height: 250px;
+    border: solid black 4px;
+    border-radius: 400px;
+}
+.one p{
+    padding-left: 23px;
+}
+.introsection h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+}
+.intromain{
+    padding: 34px 9px;
+}
+.intromain p,ul{
+    font-size: 1.2rem;
+    font-family: 'PT Serif', serif;
+}
+.intromain h3{
+    font-family: 'Roboto', sans-serif;
+}
+.intromain ul{
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+.info{
+    font-size: 0.9rem !important;
+}
+@media (max-width: 1215px)
+{
+    .image{
+        display: none;
+    }
+    .contactform, .skillcontainer, .aboutcontainer{
+        margin: 50px 8px;
+    }
+    .intromain p,ul{
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 700px)
+{
+    .intromain img{
+        display: none;
+    }
+}
